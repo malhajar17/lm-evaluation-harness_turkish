@@ -1,6 +1,6 @@
 group:
   - ai2_arc
-task: arc_tr-v0.2
+task: arc_easy_tr-v0.2
 dataset_path: malhajar/arc-tr-v0.2
 output_type: multiple_choice
 test_split: test

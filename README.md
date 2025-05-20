@@ -41,11 +41,11 @@ The Language Model Evaluation Harness is the backend for 🤗 Hugging Face's pop
 
 ## Install
 
-To install the `lm-eval` package from the github repository, run:
+To install the `lm-eval` package from the github repository for Turkish, run:
 
 ```bash
-git clone https://github.com/EleutherAI/lm-evaluation-harness
-cd lm-evaluation-harness
+git clone https://github.com/malhajar17/lm-evaluation-harness_turkish.git
+cd lm-evaluation-harness_turkish
 pip install -e .
 ```
 
@@ -62,7 +62,7 @@ A list of supported tasks (or groupings of tasks) can be viewed with `lm-eval --
 
 To evaluate a model hosted on the [HuggingFace Hub](https://huggingface.co/models) (e.g. GPT-J-6B) on `hellaswag` you can use the following command (this assumes you are using a CUDA-compatible GPU):
 To use on of the Turkish evaluations for (Hellaswag, Truthful_qa, GSM8K, Winogrande, ARC, MMLU) it is sufficient to add "_tr" to the intended test. 
-For example, to evaluate on the turkish hellaswag we can use "hellaswag_tr"
+For example, to evaluate on the turkish hellaswag we can use "hellaswag_tr".
 ```bash
 lm_eval --model hf \
     --model_args pretrained=EleutherAI/gpt-j-6B \
@@ -70,6 +70,14 @@ lm_eval --model hf \
     --device cuda:0 \
     --batch_size 8
 ```
+
+Turkish versions of the task names as follows:
+- hellaswag_tr
+- truthfulqa_gen_tr
+- gsm8k_tr
+- winogrande_tr
+- arc_challenge_tr
+- mmlu_tr
 
 Additional arguments can be provided to the model constructor using the `--model_args` flag. Most notably, this supports the common practice of using the `revisions` feature on the Hub to store partially trained checkpoints, or to specify the datatype for running a model:
 
