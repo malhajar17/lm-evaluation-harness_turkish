@@ -70,14 +70,13 @@ lm_eval --model hf \
     --device cuda:0 \
     --batch_size 8
 ```
-
-Turkish versions of the task names as follows:
-- hellaswag_tr
-- truthfulqa_gen_tr
-- gsm8k_tr
-- winogrande_tr
-- arc_challenge_tr
-- mmlu_tr
+The Turkish versions of the v0.2 task names are as follows:
+- mmlu_tr_v0.2
+- arc_tr-v0.2
+- gsm8k_tr-v0.2 
+- hellaswag_tr-v0.2
+- truthfulqa_v0.2
+- winogrande_tr-v0.2
 
 Additional arguments can be provided to the model constructor using the `--model_args` flag. Most notably, this supports the common practice of using the `revisions` feature on the Hub to store partially trained checkpoints, or to specify the datatype for running a model:
 
