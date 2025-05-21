@@ -1,4 +1,4 @@
-task: winogrande_tr-v0.2
+task: winogrande_tr
 dataset_path: malhajar/winogrande-tr
 output_type: multiple_choice
 training_split: train
